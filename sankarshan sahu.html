@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sss</title>
+    <style>
+        body {
+            background-color: rgb(58, 55, 55);
+        }
+
+        .page1 {
+            background-color: #1da8cd;
+            height: 1000px;
+
+        }
+
+        .heading {
+            /* background-color: rgb(58, 163, 216); */
+            width: 100%;
+            height: 50px;
+            padding: 60px;
+            color: white;
+            font-size: 30px;
+
+        }
+
+        .sub {
+            display: flex;
+            flex-direction: row;
+            width: 100px;
+            height: 100px;
+            color: white;
+            padding-left: 60px;
+
+
+        }
+
+        .sub1 {
+            font-size: 70px;
+
+        }
+
+        .sub2 {
+            font-size: 25px;
+        }
+
+        .sub3 {
+            width: 200px;
+            height: 40px;
+            background-color: black;
+            text-align: center;
+            padding-top: 10px;
+            font-size: 25px;
+            border-radius: 10px;
+
+        }
+
+        img {
+            height: 700px;
+        }
+
+        .page3 {
+            background-color: #1a2528 ;
+            width:100%;
+            height: 800px;
+            
+        }
+
+        .page31 {
+            width: 500px;
+            padding-top: 150px;
+            padding-left: 40px;
+            color: white;
+
+        }
+        .page32{
+            font-size: 15px;
+            padding-left: 40px;
+            padding-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page1">
+        <pre
+            class="heading"><b>Pankaj+co.                                    Home       Our Service     Contact Us </b></pre>
+        <div class="sub">
+
+            <div>
+                <pre class="sub1"><b>Experience <br> Excellence <br> with us.</pre>
+                <pre class="sub2">Your partner in business</b></pre>
+                <pre class="sub3">LEARN MORE</pre>
+            </div>
+            <div class=""><img src="Asset1.png" alt="img1"></div>
+
+        </div>
+    </div>
+    <div class="page3">
+        <div class="page31">
+            <h1 style="font-size: 3em;">The Expenditure</h1>
+            <h2>This is prime space! Use it to elaborate on your attention-grabbing heading. Explain what this graph is
+                about, share some details, and give just the right amount of information to engage your audence. Treat
+                this paragraph as a caption of sorts to accompany your chart.</h2>
+        </div>
+        <p class="page32" style="color: white;">know more...</p>
+    </div>
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+
+</html>
